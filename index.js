@@ -1,9 +1,7 @@
+var individual_array = []
+var family_array = []
 
-
-let individual_array = []
-let family_array = []
-
-let indiv_data = {}
+var indiv_data = {}
 var indiv_flag = true
 var family_index = null
 
@@ -36,8 +34,8 @@ function create_entry(gedcom_event, gedcom_value) {
 function parse_line(gedcom_tab, gedcom_line) {
   // Gets gedcom event and value from the line
   var event_idx = gedcom_line.indexOf(" ")
-  var gedcom_event = gedcom_line.substring(0, event_idx)
-  var gedcom_value = gedcom_line.substring(event_idx, gedcom_line.length)
+  var gedcom_event = gedcom_line.substring(0, event_idx).trim()
+  var gedcom_value = gedcom_line.substring(event_idx, gedcom_line.length).trim()
   
   // Finds beginning of family section
   if (gedcom_tab == "0" && gedcom_event.includes("@F") && indiv_flag == true) {
@@ -72,7 +70,10 @@ function parseFileData(file_text) {
   family_array = individual_array.splice(family_index, individual_array.length)
   
   family_array.unshift({})
-  analyze_family_data()
+  
+  //analyze_family_data()
+
+  document.getElementById("submit_btn").disabled = false;
 }
 
 const readUploadedFileAsText = (inputFile) => {
@@ -100,8 +101,44 @@ try {
     //fileContentDiv.innerHTML = fileContents
     parseFileData(fileContents)
 } catch (e) {
-    //fileContentDiv.innerHTML = e.message
     alert(e.message)
 }
 }
 
+
+
+function get_data(name, para_text) {
+  try {
+    for (let i = 1; i < individual_array.length; i++) {
+      let curr_name = individual_array[i].NAME
+      curr_name = curr_name.toString().replaceAll('/', '')
+      if (curr_name == name) {
+        console.log("Name for entry was found!")
+
+        for (key in individual_array[i]) {
+          para_text += key.toString() + ":&emsp;&emsp;" + individual_array[i][key].toString() + "<br>"
+        }
+        return para_text
+      } 
+    }
+  }
+  catch(err) {
+    
+  }
+  
+}
+
+
+function submit_btn() {
+  console.log("Submit Button Pressed")
+  let name = document.getElementById("myName").value
+  
+  let para_text = ""
+
+  let para = document.getElementById("paragraph_text")
+
+  para_text = para_text += "Showing Data" + "<br><br>"
+  para_text = get_data(name, para_text)
+  para.innerHTML = para_text
+ 
+}

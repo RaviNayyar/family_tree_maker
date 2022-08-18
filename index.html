@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Family Tree</title>
+<title>Family Tree Maker</title>
 <link rel="stylesheet" href="index.css">
+<link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 <script src="index.js"></script>
 <body>
@@ -13,9 +14,12 @@
         </label>
     </div>
     <div id="file-content"></div>
+    <br><br>
+    <input type="text" id="myName" placeholder="Enter Name">
+    <button id="submit_btn" onclick="submit_btn()" disabled>Submit</button>
+    <p id="paragraph_text">
 
-
-
+    </p>
     <script>
         document.querySelector('input#primary-file-upload').addEventListener('change', handleUpload)
     </script>
