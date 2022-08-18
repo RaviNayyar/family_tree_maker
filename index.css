@@ -1,0 +1,27 @@
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 5px solid #ccc;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    justify-content: center;
+    display: inline-block;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.custom-file-upload:hover {
+    background-color: black;
+    color: white;
+    transition-delay:0.01s;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
