@@ -1,0 +1,2123 @@
+0 HEAD
+1 SOUR Family Echo
+2 WWW http://www.familyecho.com/
+1 FILE My Family
+1 DATE 14 JAN 2023
+1 DEST ANSTFILE
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 SUBM @I1@
+2 NAME Ravi Nayyar
+1 SUBN
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Ravi /Nayyar/
+2 GIVN Ravi
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Raman /Nayyar/
+2 GIVN Raman
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMS @F1@
+1 FAMC @F2@
+0 @I3@ INDI
+1 NAME Vibha /Mukul/
+2 GIVN Vibha
+2 SURN Mukul
+2 _MARNM Nayyar
+1 SEX F
+1 FAMS @F1@
+0 @I4@ INDI
+1 NAME Veer /Nayyar/
+2 GIVN Veer
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMC @F1@
+0 @I5@ INDI
+1 NAME Ramesh /Nayyar/
+2 GIVN Ramesh
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMS @F2@
+0 @I6@ INDI
+1 NAME Krishan-kanta(Geeta) /Chopra/
+2 GIVN Krishan-kanta(Geeta)
+2 SURN Chopra
+2 _MARNM Nayyar
+1 SEX F
+1 FAMS @F2@
+1 FAMC @F3@
+0 @I7@ INDI
+1 NAME Sanjeev /Nayyar/
+2 GIVN Sanjeev
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMS @F4@
+1 FAMC @F2@
+0 @I8@ INDI
+1 NAME Anjoo(Mini) /Nayyar/
+2 GIVN Anjoo(Mini)
+2 SURN Nayyar
+2 _MARNM Joshi
+1 SEX F
+1 FAMS @F5@
+1 FAMC @F2@
+0 @I9@ INDI
+1 NAME Ashish /Joshi/
+2 GIVN Ashish
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX M
+1 FAMS @F5@
+1 FAMC @F6@
+0 @I10@ INDI
+1 NAME Suman /Anand/
+2 GIVN Suman
+2 SURN Anand
+2 _MARNM Nayyar
+1 SEX F
+1 FAMS @F4@
+0 @I11@ INDI
+1 NAME Sanchita /Nayyar/
+2 GIVN Sanchita
+2 SURN Nayyar
+2 _MARNM Malhotra
+1 SEX F
+1 FAMS @F7@
+1 FAMC @F4@
+0 @I12@ INDI
+1 NAME Soumya /Nayyar/
+2 GIVN Soumya
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMS @F8@
+1 FAMC @F4@
+0 @I13@ INDI
+1 NAME Arun /Malhotra/
+2 GIVN Arun
+2 SURN Malhotra
+2 _MARNM Malhotra
+1 SEX M
+1 FAMS @F7@
+0 @I14@ INDI
+1 NAME Diya /Malhotra/
+2 GIVN Diya
+2 SURN Malhotra
+2 _MARNM Malhotra
+1 SEX F
+1 FAMC @F7@
+0 @I15@ INDI
+1 NAME Amaya /Malhotra/
+2 GIVN Amaya
+2 SURN Malhotra
+2 _MARNM Malhotra
+1 SEX F
+1 FAMC @F7@
+0 @I16@ INDI
+1 NAME Munshi_Ram /Chopra/
+2 GIVN Munshi_Ram
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F3@
+1 FAMS @F9@
+1 FAMS @F10@
+1 FAMC @F11@
+0 @I17@ INDI
+1 NAME Mayadevi /UKN/
+2 GIVN Mayadevi
+2 SURN UKN
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F3@
+1 FAMS @F12@
+0 @I18@ INDI
+1 NAME Satya_Prakash (Sath) /Chopra/
+2 GIVN Satya_Prakash (Sath)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F13@
+1 FAMC @F3@
+0 @I19@ INDI
+1 NAME Lalita /Malik/
+2 GIVN Lalita
+2 SURN Malik
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F13@
+1 FAMC @F14@
+0 @I20@ INDI
+1 NAME Ameeta /Chopra/
+2 GIVN Ameeta
+2 SURN Chopra
+2 _MARNM Kapoor
+1 SEX F
+1 FAMS @F15@
+1 FAMC @F13@
+0 @I21@ INDI
+1 NAME Arun(sonu) /Chopra/
+2 GIVN Arun(sonu)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F16@
+1 FAMC @F13@
+0 @I22@ INDI
+1 NAME Monica /Malhotra/
+2 GIVN Monica
+2 SURN Malhotra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F16@
+0 @I23@ INDI
+1 NAME Yash (Chinu) /Chopra/
+2 GIVN Yash (Chinu)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMC @F16@
+0 @I24@ INDI
+1 NAME Surendra /Kapoor/
+2 GIVN Surendra
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX M
+1 FAMS @F15@
+0 @I25@ INDI
+1 NAME Rishi /Kapoor/
+2 GIVN Rishi
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX M
+1 FAMC @F15@
+0 @I26@ INDI
+1 NAME Reema /Kapoor/
+2 GIVN Reema
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX F
+1 FAMC @F15@
+0 @I27@ INDI
+1 NAME Om_Prakash (Ohm Mamaji) /Chopra/
+2 GIVN Om_Prakash (Ohm Mamaji)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F17@
+1 FAMC @F3@
+0 @I28@ INDI
+1 NAME Shakuntula /Malhotra/
+2 GIVN Shakuntula
+2 SURN Malhotra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F17@
+0 @I29@ INDI
+1 NAME Kanwal_Krishna(Jugnu) /Chopra/
+2 GIVN Kanwal_Krishna(Jugnu)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F18@
+1 FAMC @F17@
+0 @I30@ INDI
+1 NAME Deepak /Chopra/
+2 GIVN Deepak
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F19@
+1 FAMC @F17@
+0 @I31@ INDI
+1 NAME Rajni /Malhotra/
+2 GIVN Rajni
+2 SURN Malhotra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F19@
+0 @I32@ INDI
+1 NAME Nikhil /Chopra/
+2 GIVN Nikhil
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F20@
+1 FAMC @F19@
+0 @I33@ INDI
+1 NAME Yogita /Chopra/
+2 GIVN Yogita
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F21@
+1 FAMC @F19@
+0 @I34@ INDI
+1 NAME Parveen(dolly) /Swine/
+2 GIVN Parveen(dolly)
+2 SURN Swine
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F18@
+0 @I35@ INDI
+1 NAME Saurabh(Aunku) /Chopra/
+2 GIVN Saurabh(Aunku)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F22@
+1 FAMC @F18@
+0 @I36@ INDI
+1 NAME Bhavna /Chopra/
+2 GIVN Bhavna
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F18@
+0 @I37@ INDI
+1 NAME Aashima /Chopra/
+2 GIVN Aashima
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F20@
+0 @I38@ INDI
+1 NAME Seema /Chopra/
+2 GIVN Seema
+2 SURN Chopra
+2 _MARNM Dilawari
+1 SEX F
+1 FAMS @F23@
+1 FAMC @F13@
+0 @I39@ INDI
+1 NAME Vikas /Dilawari/
+2 GIVN Vikas
+2 SURN Dilawari
+2 _MARNM Dilawari
+1 SEX M
+1 FAMS @F23@
+0 @I40@ INDI
+1 NAME Simran(Maha_Lakshmi) /Dilawari/
+2 GIVN Simran(Maha_Lakshmi)
+2 SURN Dilawari
+2 _MARNM Dilawari
+1 SEX F
+1 FAMC @F23@
+0 @I41@ INDI
+1 NAME Shweta(_Saraswati) /Dilawari/
+2 GIVN Shweta(_Saraswati)
+2 SURN Dilawari
+2 _MARNM Dilawari
+1 SEX F
+1 FAMC @F23@
+0 @I42@ INDI
+1 NAME Ram-Rashpall(Pall Mamaji) /Chopra/
+2 GIVN Ram-Rashpall(Pall Mamaji)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F24@
+1 FAMC @F3@
+0 @I43@ INDI
+1 NAME Pushpavati /Khanna/
+2 GIVN Pushpavati
+2 SURN Khanna
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F24@
+0 @I44@ INDI
+1 NAME Ravindar(Matta) /Chopra/
+2 GIVN Ravindar(Matta)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F25@
+1 FAMC @F24@
+0 @I45@ INDI
+1 NAME Mohindar(Titu) /Chopra/
+2 GIVN Mohindar(Titu)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F26@
+1 FAMC @F24@
+0 @I46@ INDI
+1 NAME Santosh /Dhawan/
+2 GIVN Santosh
+2 SURN Dhawan
+2 _MARNM Dhawan
+1 SEX F
+1 FAMS @F27@
+1 FAMC @F3@
+0 @I47@ INDI
+1 NAME Indrajeet /Dhawan/
+2 GIVN Indrajeet
+2 SURN Dhawan
+2 _MARNM Dhawan
+1 SEX M
+1 FAMS @F27@
+0 @I48@ INDI
+1 NAME Anil(Kadhoo) /Dhawan/
+2 GIVN Anil(Kadhoo)
+2 SURN Dhawan
+2 _MARNM Dhawan
+1 SEX M
+1 FAMS @F28@
+1 FAMC @F27@
+0 @I49@ INDI
+1 NAME Sadhana /Malik/
+2 GIVN Sadhana
+2 SURN Malik
+2 _MARNM Dhawan
+1 SEX F
+1 FAMS @F28@
+0 @I50@ INDI
+1 NAME Ashish /Dhawan/
+2 GIVN Ashish
+2 SURN Dhawan
+2 _MARNM Dhawan
+1 SEX M
+1 FAMS @F29@
+1 FAMC @F28@
+0 @I51@ INDI
+1 NAME Amandeep /Dhawan/
+2 GIVN Amandeep
+2 SURN Dhawan
+2 _MARNM Dhawan
+1 SEX F
+1 FAMS @F29@
+0 @I52@ INDI
+1 NAME Simran /Dhawan/
+2 GIVN Simran
+2 SURN Dhawan
+2 _MARNM Dhawan
+1 SEX F
+1 FAMC @F29@
+0 @I53@ INDI
+1 NAME Lajya (maciji) /Chopra/
+2 GIVN Lajya (maciji)
+2 SURN Chopra
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F30@
+1 FAMC @F3@
+0 @I54@ INDI
+1 NAME Desraj (uncleji) /Khanna/
+2 GIVN Desraj (uncleji)
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMS @F30@
+0 @I55@ INDI
+1 NAME Rajindar(Bila_Pappa) /Khanna/
+2 GIVN Rajindar(Bila_Pappa)
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 OCCU Wing Commander (Decorated)
+2 PLAC Indian Air Force
+1 FAMS @F31@
+1 FAMC @F30@
+0 @I56@ INDI
+1 NAME Monica /Khanna/
+2 GIVN Monica
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F31@
+0 @I57@ INDI
+1 NAME Banti /Khanna/
+2 GIVN Banti
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMC @F31@
+0 @I58@ INDI
+1 NAME Bulbul /Khanna/
+2 GIVN Bulbul
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMC @F31@
+0 @I59@ INDI
+1 NAME Aneesh(Rishi) /Joshi/
+2 GIVN Aneesh(Rishi)
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX M
+1 FAMC @F5@
+0 @I60@ INDI
+1 NAME Neelam /Dhawan/
+2 GIVN Neelam
+2 SURN Dhawan
+2 _MARNM Khosla
+1 SEX F
+1 FAMS @F32@
+1 FAMC @F27@
+0 @I61@ INDI
+1 NAME Chandra Shekhar /Khosla/
+2 GIVN Chandra Shekhar
+2 SURN Khosla
+2 _MARNM Khosla
+1 SEX M
+1 FAMS @F32@
+0 @I62@ INDI
+1 NAME Kunal /Khosla/
+2 GIVN Kunal
+2 SURN Khosla
+2 _MARNM Khosla
+1 SEX M
+1 FAMC @F32@
+0 @I63@ INDI
+1 NAME Anita /Dhawan/
+2 GIVN Anita
+2 SURN Dhawan
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F33@
+1 FAMC @F27@
+0 @I64@ INDI
+1 NAME Girish /Khanna/
+2 GIVN Girish
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMS @F33@
+0 @I65@ INDI
+1 NAME Anisha /Khanna/
+2 GIVN Anisha
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMC @F33@
+0 @I66@ INDI
+1 NAME Rahul /Khanna/
+2 GIVN Rahul
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMC @F33@
+0 @I67@ INDI
+1 NAME Shashi /Dhawan/
+2 GIVN Shashi
+2 SURN Dhawan
+2 _MARNM Mehrotra
+1 SEX F
+1 FAMS @F34@
+1 FAMC @F27@
+0 @I68@ INDI
+1 NAME Shekar /Mehrotra/
+2 GIVN Shekar
+2 SURN Mehrotra
+2 _MARNM Mehrotra
+1 SEX M
+1 FAMS @F34@
+0 @I69@ INDI
+1 NAME Sippi /Mehrotra/
+2 GIVN Sippi
+2 SURN Mehrotra
+2 _MARNM Mehrotra
+1 SEX F
+1 FAMC @F34@
+0 @I70@ INDI
+1 NAME Payal /Mehrotra/
+2 GIVN Payal
+2 SURN Mehrotra
+2 _MARNM Mehrotra
+1 SEX F
+1 FAMC @F34@
+0 @I71@ INDI
+1 NAME Nupur /Mehrotra/
+2 GIVN Nupur
+2 SURN Mehrotra
+2 _MARNM Mehrotra
+1 SEX F
+1 FAMC @F34@
+0 @I72@ INDI
+1 NAME Amit /Mehrotra/
+2 GIVN Amit
+2 SURN Mehrotra
+2 _MARNM Mehrotra
+1 SEX M
+1 FAMC @F34@
+0 @I73@ INDI
+1 NAME Shruti /Dhawan-Sharma/
+2 GIVN Shruti
+2 SURN Dhawan-Sharma
+2 _MARNM Dhawan-Sharma
+1 SEX F
+1 FAMS @F35@
+1 FAMC @F28@
+0 @I74@ INDI
+1 NAME Aman /Sharma/
+2 GIVN Aman
+2 SURN Sharma
+2 _MARNM Sharma
+1 SEX M
+1 FAMS @F35@
+0 @I75@ INDI
+1 NAME Aryaman /Sharma/
+2 GIVN Aryaman
+2 SURN Sharma
+2 _MARNM Sharma
+1 SEX M
+1 FAMC @F35@
+0 @I76@ INDI
+1 NAME Meena /Dhawan/
+2 GIVN Meena
+2 SURN Dhawan
+2 _MARNM Tandon
+1 SEX F
+1 DEAT Y
+1 FAMS @F36@
+1 FAMC @F27@
+0 @I77@ INDI
+1 NAME Rajan /Tandon/
+2 GIVN Rajan
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX M
+1 FAMS @F36@
+0 @I78@ INDI
+1 NAME Ashwin(Monty) /Tandon/
+2 GIVN Ashwin(Monty)
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX M
+1 FAMS @F37@
+1 FAMC @F36@
+0 @I79@ INDI
+1 NAME Rishi /Tandon/
+2 GIVN Rishi
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX M
+1 FAMS @F38@
+1 FAMC @F36@
+0 @I80@ INDI
+1 NAME Swati /Tandon/
+2 GIVN Swati
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX F
+1 FAMS @F37@
+0 @I81@ INDI
+1 NAME Maahika /Tandon/
+2 GIVN Maahika
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX F
+1 FAMC @F37@
+0 @I82@ INDI
+1 NAME Nihaarika /Tandon/
+2 GIVN Nihaarika
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX F
+1 FAMC @F37@
+0 @I83@ INDI
+1 NAME Tanya /Tandon/
+2 GIVN Tanya
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX F
+1 FAMS @F38@
+0 @I84@ INDI
+1 NAME Shushma(shushi) /Chopra/
+2 GIVN Shushma(shushi)
+2 SURN Chopra
+2 _MARNM Tandon
+1 SEX F
+1 FAMS @F39@
+1 FAMC @F24@
+0 @I85@ INDI
+1 NAME Meera(meera-didi) /Chopra/
+2 GIVN Meera(meera-didi)
+2 SURN Chopra
+2 _MARNM Sibal
+1 SEX F
+1 FAMS @F40@
+1 FAMC @F24@
+0 @I86@ INDI
+1 NAME Surindarjith /Sibal/
+2 GIVN Surindarjith
+2 SURN Sibal
+2 _MARNM Sibal
+1 SEX M
+1 FAMS @F40@
+0 @I87@ INDI
+1 NAME Pooja /Sibal/
+2 GIVN Pooja
+2 SURN Sibal
+2 _MARNM Roychoudhury
+1 SEX F
+1 FAMS @F41@
+1 FAMC @F40@
+0 @I88@ INDI
+1 NAME Pratik /Roychoudhury/
+2 GIVN Pratik
+2 SURN Roychoudhury
+2 _MARNM Roychoudhury
+1 SEX M
+1 FAMS @F41@
+0 @I89@ INDI
+1 NAME Saina /Roychoudhury/
+2 GIVN Saina
+2 SURN Roychoudhury
+2 _MARNM Roychoudhury
+1 SEX F
+1 FAMC @F41@
+0 @I90@ INDI
+1 NAME Ariana /Roychoudhury/
+2 GIVN Ariana
+2 SURN Roychoudhury
+2 _MARNM Roychoudhury
+1 SEX F
+1 FAMC @F41@
+0 @I91@ INDI
+1 NAME Vidhi /Sibal/
+2 GIVN Vidhi
+2 SURN Sibal
+2 _MARNM Bhandari
+1 SEX F
+1 FAMS @F42@
+1 FAMC @F40@
+0 @I92@ INDI
+1 NAME Ankur /Bhandari/
+2 GIVN Ankur
+2 SURN Bhandari
+2 _MARNM Bhandari
+1 SEX M
+1 FAMS @F42@
+0 @I93@ INDI
+1 NAME Aarnav /Bhandari/
+2 GIVN Aarnav
+2 SURN Bhandari
+2 _MARNM Bhandari
+1 SEX M
+1 FAMC @F42@
+0 @I94@ INDI
+1 NAME Aarin /Bhandari/
+2 GIVN Aarin
+2 SURN Bhandari
+2 _MARNM Bhandari
+1 SEX M
+1 FAMC @F42@
+0 @I95@ INDI
+1 NAME Punam /Chopra/
+2 GIVN Punam
+2 SURN Chopra
+2 _MARNM Chadha
+1 SEX F
+1 FAMS @F43@
+1 FAMC @F24@
+0 @I96@ INDI
+1 NAME Ravinder /Chadha/
+2 GIVN Ravinder
+2 SURN Chadha
+2 _MARNM Chadha
+1 SEX M
+1 FAMS @F43@
+0 @I97@ INDI
+1 NAME Sonam /Chadha/
+2 GIVN Sonam
+2 SURN Chadha
+2 _MARNM Vats
+1 SEX F
+1 FAMS @F44@
+1 FAMC @F43@
+0 @I98@ INDI
+1 NAME Vivek /Vats/
+2 GIVN Vivek
+2 SURN Vats
+2 _MARNM Vats
+1 SEX M
+1 FAMS @F44@
+0 @I99@ INDI
+1 NAME Prerna(Arshi) /Chadha/
+2 GIVN Prerna(Arshi)
+2 SURN Chadha
+2 _MARNM Chadha
+1 SEX F
+1 FAMC @F43@
+0 @I100@ INDI
+1 NAME Sarita /Chopra/
+2 GIVN Sarita
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F25@
+0 @I101@ INDI
+1 NAME Akshay /Chopra/
+2 GIVN Akshay
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F45@
+1 FAMC @F25@
+0 @I102@ INDI
+1 NAME Archit /Chopra/
+2 GIVN Archit
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F46@
+1 FAMC @F25@
+0 @I103@ INDI
+1 NAME Shruti /Chopra/
+2 GIVN Shruti
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F46@
+0 @I104@ INDI
+1 NAME Shreshtha /Chopra/
+2 GIVN Shreshtha
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F45@
+0 @I105@ INDI
+1 NAME Ragavi /Chopra/
+2 GIVN Ragavi
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F45@
+0 @I106@ INDI
+1 NAME Renu(Bobby) /Chopra/
+2 GIVN Renu(Bobby)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F26@
+0 @I107@ INDI
+1 NAME Ankur /Chopra/
+2 GIVN Ankur
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F47@
+1 FAMC @F26@
+0 @I108@ INDI
+1 NAME Ankit /Chopra/
+2 GIVN Ankit
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F48@
+1 FAMC @F26@
+0 @I109@ INDI
+1 NAME Parul /Chopra/
+2 GIVN Parul
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F47@
+0 @I110@ INDI
+1 NAME Aakanksha /Chopra/
+2 GIVN Aakanksha
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F48@
+0 @I111@ INDI
+1 NAME Ishita /Sha/
+2 GIVN Ishita
+2 SURN Sha
+2 _MARNM Nayyar
+1 SEX F
+1 FAMS @F8@
+0 @I112@ INDI
+1 NAME Sneh(Bhuti) /Khanna/
+2 GIVN Sneh(Bhuti)
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F49@
+1 FAMC @F30@
+0 @I113@ INDI
+1 NAME Ved-Prakash(VP) /Chopra/
+2 GIVN Ved-Prakash(VP)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F50@
+1 FAMC @F3@
+0 @I114@ INDI
+1 NAME Sneh /Chopra/
+2 GIVN Sneh
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F50@
+0 @I115@ INDI
+1 NAME Lalith-kumar(Bablu) /Chopra/
+2 GIVN Lalith-kumar(Bablu)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F51@
+1 FAMC @F50@
+0 @I116@ INDI
+1 NAME Neeru(Pinki) /Chopra/
+2 GIVN Neeru(Pinki)
+2 SURN Chopra
+2 _MARNM Nayyar
+1 SEX F
+1 FAMS @F52@
+1 FAMC @F50@
+0 @I117@ INDI
+1 NAME Ashok /Nayyar/
+2 GIVN Ashok
+2 SURN Nayyar
+2 _MARNM Nayyar
+1 SEX M
+1 FAMS @F52@
+0 @I118@ INDI
+1 NAME Devika /Nayyar/
+2 GIVN Devika
+2 SURN Nayyar
+2 _MARNM Naik
+1 SEX F
+1 FAMS @F53@
+1 FAMC @F52@
+0 @I119@ INDI
+1 NAME Nishad /Naik/
+2 GIVN Nishad
+2 SURN Naik
+2 _MARNM Naik
+1 SEX M
+1 FAMS @F53@
+0 @I120@ INDI
+1 NAME Ishaan /Naik/
+2 GIVN Ishaan
+2 SURN Naik
+2 _MARNM Naik
+1 SEX M
+1 FAMC @F53@
+0 @I121@ INDI
+1 NAME Jyoti /Chopra/
+2 GIVN Jyoti
+2 SURN Chopra
+2 _MARNM Kapoor
+1 SEX F
+1 FAMS @F54@
+1 FAMC @F50@
+0 @I122@ INDI
+1 NAME Neena(gogo) /Chopra/
+2 GIVN Neena(gogo)
+2 SURN Chopra
+2 _MARNM Khanijo
+1 SEX F
+1 FAMS @F55@
+1 FAMC @F50@
+0 @I123@ INDI
+1 NAME Chandermohan /Khanijo/
+2 GIVN Chandermohan
+2 SURN Khanijo
+2 _MARNM Khanijo
+1 SEX M
+1 FAMS @F55@
+0 @I124@ INDI
+1 NAME Bharti /Khanijo/
+2 GIVN Bharti
+2 SURN Khanijo
+2 _MARNM Khanijo
+1 SEX F
+1 FAMC @F55@
+0 @I125@ INDI
+1 NAME Ashok /Kapoor/
+2 GIVN Ashok
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX M
+1 FAMS @F54@
+0 @I126@ INDI
+1 NAME Divye /Kapoor/
+2 GIVN Divye
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX M
+1 FAMS @F56@
+1 FAMC @F54@
+0 @I127@ INDI
+1 NAME Diviya /Mithra/
+2 GIVN Diviya
+2 SURN Mithra
+2 _MARNM Mithra
+1 SEX F
+1 FAMS @F56@
+0 @I128@ INDI
+1 NAME Mehak (Guddi) /Chopra/
+2 GIVN Mehak (Guddi)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F16@
+0 @I129@ INDI
+1 NAME Dhruv /Kapoor/
+2 GIVN Dhruv
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX M
+1 FAMC @F56@
+0 @I130@ INDI
+1 NAME Poorvi /Kapoor/
+2 GIVN Poorvi
+2 SURN Kapoor
+2 _MARNM Kapoor
+1 SEX F
+1 FAMS @F57@
+1 FAMC @F54@
+0 @I131@ INDI
+1 NAME Shubham /Mishra/
+2 GIVN Shubham
+2 SURN Mishra
+2 _MARNM Mishra
+1 SEX M
+1 FAMS @F57@
+0 @I132@ INDI
+1 NAME Shanti_Prakash /Malik/
+2 GIVN Shanti_Prakash
+2 SURN Malik
+2 _MARNM Malik
+1 SEX M
+1 DEAT Y
+1 FAMS @F14@
+0 @I133@ INDI
+1 NAME Kaushalaya /Chadha/
+2 GIVN Kaushalaya
+2 SURN Chadha
+2 _MARNM Malik
+1 SEX F
+1 DEAT Y
+1 FAMS @F14@
+0 @I134@ INDI
+1 NAME Subhash /Malik/
+2 GIVN Subhash
+2 SURN Malik
+2 _MARNM Malik
+1 SEX M
+1 DEAT Y
+1 FAMC @F14@
+0 @I135@ INDI
+1 NAME Yogesh /Malik/
+2 GIVN Yogesh
+2 SURN Malik
+2 _MARNM Malik
+1 SEX M
+1 DEAT Y
+1 FAMC @F14@
+0 @I136@ INDI
+1 NAME Mahesh /Malik/
+2 GIVN Mahesh
+2 SURN Malik
+2 _MARNM Malik
+1 SEX M
+1 DEAT Y
+1 FAMC @F14@
+0 @I137@ INDI
+1 NAME Shiv_Prakash /Chopra/
+2 GIVN Shiv_Prakash
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 DEAT Y
+1 FAMC @F3@
+0 @I138@ INDI
+1 NAME Hunsraj /Chopra/
+2 GIVN Hunsraj
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 DEAT Y
+1 FAMS @F58@
+1 FAMC @F3@
+0 @I139@ INDI
+1 NAME
+1 SEX F
+1 FAMS @F10@
+0 @I140@ INDI
+1 NAME Ram_Parshad /Chopra/
+2 GIVN Ram_Parshad
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMC @F10@
+0 @I141@ INDI
+1 NAME Vidya /Chopra/
+2 GIVN Vidya
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F10@
+0 @I142@ INDI
+1 NAME Ishwara /Chopra/
+2 GIVN Ishwara
+2 SURN Chopra
+2 _MARNM Devi
+1 SEX F
+1 FAMC @F10@
+0 @I143@ INDI
+1 NAME Kailashwati /Chopra/
+2 GIVN Kailashwati
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F58@
+0 @I144@ INDI
+1 NAME Surindar(Gulu) /Chopra/
+2 GIVN Surindar(Gulu)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F59@
+1 FAMC @F58@
+0 @I145@ INDI
+1 NAME Suresh(Kali) /Chopra/
+2 GIVN Suresh(Kali)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F60@
+1 FAMC @F58@
+0 @I146@ INDI
+1 NAME Veena(Rani) /Chopra/
+2 GIVN Veena(Rani)
+2 SURN Chopra
+2 _MARNM Bhandari
+1 SEX F
+1 FAMS @F61@
+1 FAMC @F58@
+0 @I147@ INDI
+1 NAME Sneh /Chopra/
+2 GIVN Sneh
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F59@
+0 @I148@ INDI
+1 NAME Vishal(Bobby) /Chopra/
+2 GIVN Vishal(Bobby)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F62@
+1 FAMC @F59@
+0 @I149@ INDI
+1 NAME Vikas /Chopra/
+2 GIVN Vikas
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMC @F59@
+0 @I150@ INDI
+1 NAME Lily /Chopra/
+2 GIVN Lily
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F60@
+0 @I151@ INDI
+1 NAME Vikram /Chopra/
+2 GIVN Vikram
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMS @F63@
+1 FAMC @F60@
+0 @I152@ INDI
+1 NAME Arti /Chopra/
+2 GIVN Arti
+2 SURN Chopra
+2 _MARNM Kumar
+1 SEX F
+1 FAMS @F64@
+1 FAMC @F60@
+0 @I153@ INDI
+1 NAME Rahul /Kumar/
+2 GIVN Rahul
+2 SURN Kumar
+2 _MARNM Kumar
+1 SEX M
+1 FAMS @F64@
+0 @I154@ INDI
+1 NAME Nandini /Kumar/
+2 GIVN Nandini
+2 SURN Kumar
+2 _MARNM Kumar
+1 SEX F
+1 FAMC @F64@
+0 @I155@ INDI
+1 NAME Girija /Chopra/
+2 GIVN Girija
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F63@
+0 @I156@ INDI
+1 NAME Sanvi /Chopra/
+2 GIVN Sanvi
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F63@
+0 @I157@ INDI
+1 NAME Aanchal /Chopra/
+2 GIVN Aanchal
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F62@
+0 @I158@ INDI
+1 NAME Viana /Chopra/
+2 GIVN Viana
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F62@
+0 @I159@ INDI
+1 NAME Anvi /Chopra/
+2 GIVN Anvi
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F62@
+0 @I160@ INDI
+1 NAME Kavar /Bhandari/
+2 GIVN Kavar
+2 SURN Bhandari
+2 _MARNM Bhandari
+1 SEX M
+1 FAMS @F61@
+0 @I161@ INDI
+1 NAME Vandhana(Mona) /Dhandari/
+2 GIVN Vandhana(Mona)
+2 SURN Dhandari
+2 _MARNM Khullar
+1 SEX F
+1 FAMS @F65@
+1 FAMC @F61@
+0 @I162@ INDI
+1 NAME Dinesh /Khullar/
+2 GIVN Dinesh
+2 SURN Khullar
+2 _MARNM Khullar
+1 SEX M
+1 FAMS @F65@
+0 @I163@ INDI
+1 NAME Raghav /Khullar/
+2 GIVN Raghav
+2 SURN Khullar
+2 _MARNM Khullar
+1 SEX M
+1 FAMC @F65@
+0 @I164@ INDI
+1 NAME Vaibhav /Khullar/
+2 GIVN Vaibhav
+2 SURN Khullar
+2 _MARNM Khullar
+1 SEX M
+1 FAMC @F65@
+0 @I165@ INDI
+1 NAME Rajesh(Nugdi) /Khanna/
+2 GIVN Rajesh(Nugdi)
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMS @F66@
+1 FAMC @F30@
+0 @I166@ INDI
+1 NAME Rakesh /Khanna/
+2 GIVN Rakesh
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMS @F67@
+1 FAMC @F30@
+0 @I167@ INDI
+1 NAME Rajeev /Khanna/
+2 GIVN Rajeev
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMS @F68@
+1 FAMC @F30@
+0 @I168@ INDI
+1 NAME Ravinder /Beri/
+2 GIVN Ravinder
+2 SURN Beri
+2 _MARNM Beri
+1 SEX M
+1 FAMS @F49@
+0 @I169@ INDI
+1 NAME Unkwn /Beri/
+2 GIVN Unkwn
+2 SURN Beri
+2 _MARNM Beri
+1 SEX M
+1 FAMC @F49@
+0 @I170@ INDI
+1 NAME Minaxshi /Khanna/
+2 GIVN Minaxshi
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F66@
+0 @I171@ INDI
+1 NAME Pooja /Khanna/
+2 GIVN Pooja
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMC @F66@
+0 @I172@ INDI
+1 NAME Aarti /Khanna/
+2 GIVN Aarti
+2 SURN Khanna
+2 _MARNM Unkwn
+1 SEX F
+1 FAMS @F69@
+1 FAMC @F66@
+0 @I173@ INDI
+1 NAME Unkwn /Unkwn/
+2 GIVN Unkwn
+2 SURN Unkwn
+2 _MARNM Unkwn
+1 SEX M
+1 FAMS @F69@
+0 @I174@ INDI
+1 NAME Unkwn /Unkwn/
+2 GIVN Unkwn
+2 SURN Unkwn
+2 _MARNM Unkwn
+1 SEX F
+1 FAMC @F69@
+0 @I175@ INDI
+1 NAME Shaurya /Chopra/
+2 GIVN Shaurya
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMC @F20@
+0 @I176@ INDI
+1 NAME Abhinav /Unkown/
+2 GIVN Abhinav
+2 SURN Unkown
+2 _MARNM Unkown
+1 SEX M
+1 FAMS @F21@
+0 @I177@ INDI
+1 NAME Sunita /Khanna/
+2 GIVN Sunita
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F68@
+0 @I178@ INDI
+1 NAME Neelum /Khanna/
+2 GIVN Neelum
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMS @F67@
+0 @I179@ INDI
+1 NAME Raveesh /Khanna/
+2 GIVN Raveesh
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX M
+1 FAMC @F67@
+0 @I180@ INDI
+1 NAME Surbhi /Khanna/
+2 GIVN Surbhi
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMC @F68@
+0 @I181@ INDI
+1 NAME Unkwn /Khanna/
+2 GIVN Unkwn
+2 SURN Khanna
+2 _MARNM Khanna
+1 SEX F
+1 FAMC @F68@
+0 @I182@ INDI
+1 NAME Anjoo(Rosy) /Chopra/
+2 GIVN Anjoo(Rosy)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F51@
+0 @I183@ INDI
+1 NAME Nikita /Chopra/
+2 GIVN Nikita
+2 SURN Chopra
+2 _MARNM Thanawala
+1 SEX F
+1 FAMS @F70@
+1 FAMC @F51@
+0 @I184@ INDI
+1 NAME Devang /Thanawala/
+2 GIVN Devang
+2 SURN Thanawala
+2 _MARNM Thanawala
+1 SEX M
+1 FAMS @F70@
+0 @I185@ INDI
+1 NAME Anaika /Thanawala/
+2 GIVN Anaika
+2 SURN Thanawala
+2 _MARNM Thanawala
+1 SEX F
+1 FAMC @F70@
+0 @I186@ INDI
+1 NAME Ashok /Tandon/
+2 GIVN Ashok
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX M
+1 FAMS @F39@
+0 @I187@ INDI
+1 NAME Gaurav /Tandon/
+2 GIVN Gaurav
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX M
+1 FAMS @F71@
+1 FAMC @F39@
+0 @I188@ INDI
+1 NAME Manisha(Meenu) /Tandon/
+2 GIVN Manisha(Meenu)
+2 SURN Tandon
+2 _MARNM Puri
+1 SEX F
+1 FAMS @F72@
+1 FAMC @F39@
+0 @I189@ INDI
+1 NAME Anjali /Tandon/
+2 GIVN Anjali
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX F
+1 FAMS @F71@
+0 @I190@ INDI
+1 NAME Aariya /Tandon/
+2 GIVN Aariya
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX F
+1 FAMC @F71@
+0 @I191@ INDI
+1 NAME Kaiyan /Tandon/
+2 GIVN Kaiyan
+2 SURN Tandon
+2 _MARNM Tandon
+1 SEX M
+1 FAMC @F71@
+0 @I192@ INDI
+1 NAME Manu /Tandon/
+2 GIVN Manu
+2 SURN Tandon
+2 _MARNM Puri
+1 SEX M
+1 FAMS @F72@
+0 @I193@ INDI
+1 NAME Sambhav /Puri/
+2 GIVN Sambhav
+2 SURN Puri
+2 _MARNM Puri
+1 SEX M
+1 FAMC @F72@
+0 @I194@ INDI
+1 NAME Rishika /Unkown/
+2 GIVN Rishika
+2 SURN Unkown
+2 _MARNM Puri
+1 SEX F
+1 FAMC @F72@
+0 @I195@ INDI
+1 NAME Mona /Chopra/
+2 GIVN Mona
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMS @F22@
+0 @I196@ INDI
+1 NAME Ridima /Nayyar/
+2 GIVN Ridima
+2 SURN Nayyar
+2 _MARNM Pathack
+1 SEX F
+1 FAMS @F73@
+1 FAMC @F52@
+0 @I197@ INDI
+1 NAME Jijar /Pathack/
+2 GIVN Jijar
+2 SURN Pathack
+2 _MARNM Pathack
+1 SEX M
+1 FAMS @F73@
+0 @I198@ INDI
+1 NAME Unkown /Pathack/
+2 GIVN Unkown
+2 SURN Pathack
+2 _MARNM Pathack
+1 SEX F
+1 FAMC @F73@
+0 @I199@ INDI
+1 NAME Azoi /Chopra/
+2 GIVN Azoi
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F46@
+0 @I200@ INDI
+1 NAME Unkown(Ramji) /Chopra/
+2 GIVN Unkown(Ramji)
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 FAMC @F45@
+0 @I201@ INDI
+1 NAME Shailendra /Joshi/
+2 GIVN Shailendra
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX M
+1 FAMS @F6@
+0 @I202@ INDI
+1 NAME Usha /Joshi/
+2 GIVN Usha
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX F
+1 FAMS @F6@
+0 @I203@ INDI
+1 NAME Manish /Joshi/
+2 GIVN Manish
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX M
+1 FAMS @F74@
+1 FAMC @F6@
+0 @I204@ INDI
+1 NAME Madhu /Joshi/
+2 GIVN Madhu
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX F
+1 FAMS @F74@
+0 @I205@ INDI
+1 NAME Ishita(Chiya) /Joshi/
+2 GIVN Ishita(Chiya)
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX F
+1 FAMC @F74@
+0 @I206@ INDI
+1 NAME Dushyant(Poki) /Joshi/
+2 GIVN Dushyant(Poki)
+2 SURN Joshi
+2 _MARNM Joshi
+1 SEX M
+1 FAMC @F74@
+0 @I207@ INDI
+1 NAME Shakuntla /Chopra/
+2 GIVN Shakuntla
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 FAMC @F10@
+0 @I208@ INDI
+1 NAME Karamchand /Chopra/
+2 GIVN Karamchand
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 DEAT Y
+1 FAMS @F11@
+1 FAMC @F75@
+0 @I209@ INDI
+1 NAME Kulwanti_Devi /Chopra/
+2 GIVN Kulwanti_Devi
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX F
+1 DEAT Y
+1 FAMS @F11@
+0 @I210@ INDI
+1 NAME Chanduram /Chopra/
+2 GIVN Chanduram
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 DEAT Y
+1 FAMS @F75@
+1 FAMC @F76@
+0 @I211@ INDI
+1 NAME Unkown
+2 GIVN Unkown
+1 SEX F
+1 FAMS @F75@
+0 @I212@ INDI
+1 NAME Mohanram /Chopra/
+2 GIVN Mohanram
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 DEAT Y
+1 FAMS @F76@
+1 FAMC @F77@
+0 @I213@ INDI
+1 NAME Unkown
+2 GIVN Unkown
+1 SEX F
+1 FAMS @F76@
+0 @I214@ INDI
+1 NAME Nabhamal /Chopra/
+2 GIVN Nabhamal
+2 SURN Chopra
+2 _MARNM Chopra
+1 SEX M
+1 DEAT Y
+1 FAMS @F77@
+0 @I215@ INDI
+1 NAME Unkown
+2 GIVN Unkown
+1 SEX F
+1 FAMS @F77@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+1 CHIL @I4@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F2@ FAM
+1 HUSB @I5@
+1 WIFE @I6@
+1 CHIL @I2@
+1 CHIL @I7@
+1 CHIL @I8@
+1 _CURRENT N
+1 _PRIMARY N
+0 @F3@ FAM
+1 HUSB @I16@
+1 WIFE @I17@
+1 CHIL @I6@
+1 CHIL @I18@
+1 CHIL @I27@
+1 CHIL @I42@
+1 CHIL @I46@
+1 CHIL @I53@
+1 CHIL @I113@
+1 CHIL @I137@
+1 CHIL @I138@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F9@ FAM
+1 HUSB @I16@
+1 _CURRENT Y
+1 _PRIMARY N
+0 @F10@ FAM
+1 HUSB @I16@
+1 WIFE @I139@
+1 CHIL @I140@
+1 CHIL @I141@
+1 CHIL @I142@
+1 CHIL @I207@
+1 _CURRENT N
+1 _PRIMARY N
+0 @F4@ FAM
+1 HUSB @I7@
+1 WIFE @I10@
+1 CHIL @I11@
+1 CHIL @I12@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F5@ FAM
+1 HUSB @I9@
+1 WIFE @I8@
+1 CHIL @I59@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F6@ FAM
+1 HUSB @I201@
+1 WIFE @I202@
+1 CHIL @I9@
+1 CHIL @I203@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F7@ FAM
+1 HUSB @I13@
+1 WIFE @I11@
+1 CHIL @I14@
+1 CHIL @I15@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F8@ FAM
+1 HUSB @I12@
+1 WIFE @I111@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F11@ FAM
+1 HUSB @I208@
+1 WIFE @I209@
+1 CHIL @I16@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F12@ FAM
+1 WIFE @I17@
+1 _CURRENT N
+1 _PRIMARY N
+0 @F13@ FAM
+1 HUSB @I18@
+1 WIFE @I19@
+1 CHIL @I20@
+1 CHIL @I21@
+1 CHIL @I38@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F14@ FAM
+1 HUSB @I132@
+1 WIFE @I133@
+1 CHIL @I19@
+1 CHIL @I134@
+1 CHIL @I135@
+1 CHIL @I136@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F15@ FAM
+1 HUSB @I24@
+1 WIFE @I20@
+1 CHIL @I25@
+1 CHIL @I26@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F16@ FAM
+1 HUSB @I21@
+1 WIFE @I22@
+1 CHIL @I23@
+1 CHIL @I128@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F17@ FAM
+1 HUSB @I27@
+1 WIFE @I28@
+1 CHIL @I29@
+1 CHIL @I30@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F18@ FAM
+1 HUSB @I29@
+1 WIFE @I34@
+1 CHIL @I35@
+1 CHIL @I36@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F19@ FAM
+1 HUSB @I30@
+1 WIFE @I31@
+1 CHIL @I32@
+1 CHIL @I33@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F20@ FAM
+1 HUSB @I32@
+1 WIFE @I37@
+1 CHIL @I175@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F21@ FAM
+1 HUSB @I176@
+1 WIFE @I33@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F22@ FAM
+1 HUSB @I35@
+1 WIFE @I195@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F23@ FAM
+1 HUSB @I39@
+1 WIFE @I38@
+1 CHIL @I40@
+1 CHIL @I41@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F24@ FAM
+1 HUSB @I42@
+1 WIFE @I43@
+1 CHIL @I44@
+1 CHIL @I45@
+1 CHIL @I84@
+1 CHIL @I85@
+1 CHIL @I95@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F25@ FAM
+1 HUSB @I44@
+1 WIFE @I100@
+1 CHIL @I101@
+1 CHIL @I102@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F26@ FAM
+1 HUSB @I45@
+1 WIFE @I106@
+1 CHIL @I107@
+1 CHIL @I108@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F27@ FAM
+1 HUSB @I47@
+1 WIFE @I46@
+1 CHIL @I48@
+1 CHIL @I60@
+1 CHIL @I63@
+1 CHIL @I67@
+1 CHIL @I76@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F28@ FAM
+1 HUSB @I48@
+1 WIFE @I49@
+1 CHIL @I50@
+1 CHIL @I73@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F29@ FAM
+1 HUSB @I50@
+1 WIFE @I51@
+1 CHIL @I52@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F30@ FAM
+1 HUSB @I54@
+1 WIFE @I53@
+1 CHIL @I55@
+1 CHIL @I112@
+1 CHIL @I165@
+1 CHIL @I166@
+1 CHIL @I167@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F31@ FAM
+1 HUSB @I55@
+1 WIFE @I56@
+1 CHIL @I57@
+1 CHIL @I58@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F32@ FAM
+1 HUSB @I61@
+1 WIFE @I60@
+1 CHIL @I62@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F33@ FAM
+1 HUSB @I64@
+1 WIFE @I63@
+1 CHIL @I65@
+1 CHIL @I66@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F34@ FAM
+1 HUSB @I68@
+1 WIFE @I67@
+1 CHIL @I69@
+1 CHIL @I70@
+1 CHIL @I71@
+1 CHIL @I72@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F35@ FAM
+1 HUSB @I74@
+1 WIFE @I73@
+1 CHIL @I75@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F36@ FAM
+1 HUSB @I77@
+1 WIFE @I76@
+1 CHIL @I78@
+1 CHIL @I79@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F37@ FAM
+1 HUSB @I78@
+1 WIFE @I80@
+1 CHIL @I81@
+1 CHIL @I82@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F38@ FAM
+1 HUSB @I79@
+1 WIFE @I83@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F39@ FAM
+1 HUSB @I186@
+1 WIFE @I84@
+1 CHIL @I187@
+1 CHIL @I188@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F40@ FAM
+1 HUSB @I86@
+1 WIFE @I85@
+1 CHIL @I87@
+1 CHIL @I91@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F41@ FAM
+1 HUSB @I88@
+1 WIFE @I87@
+1 CHIL @I89@
+1 CHIL @I90@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F42@ FAM
+1 HUSB @I92@
+1 WIFE @I91@
+1 CHIL @I93@
+1 CHIL @I94@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F43@ FAM
+1 HUSB @I96@
+1 WIFE @I95@
+1 CHIL @I97@
+1 CHIL @I99@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F44@ FAM
+1 HUSB @I98@
+1 WIFE @I97@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F45@ FAM
+1 HUSB @I101@
+1 WIFE @I104@
+1 CHIL @I105@
+1 CHIL @I200@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F46@ FAM
+1 HUSB @I102@
+1 WIFE @I103@
+1 CHIL @I199@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F47@ FAM
+1 HUSB @I107@
+1 WIFE @I109@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F48@ FAM
+1 HUSB @I108@
+1 WIFE @I110@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F49@ FAM
+1 HUSB @I168@
+1 WIFE @I112@
+1 CHIL @I169@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F50@ FAM
+1 HUSB @I113@
+1 WIFE @I114@
+1 CHIL @I115@
+1 CHIL @I116@
+1 CHIL @I121@
+1 CHIL @I122@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F51@ FAM
+1 HUSB @I115@
+1 WIFE @I182@
+1 CHIL @I183@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F52@ FAM
+1 HUSB @I117@
+1 WIFE @I116@
+1 CHIL @I118@
+1 CHIL @I196@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F53@ FAM
+1 HUSB @I119@
+1 WIFE @I118@
+1 CHIL @I120@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F54@ FAM
+1 HUSB @I125@
+1 WIFE @I121@
+1 CHIL @I126@
+1 CHIL @I130@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F55@ FAM
+1 HUSB @I123@
+1 WIFE @I122@
+1 CHIL @I124@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F56@ FAM
+1 HUSB @I126@
+1 WIFE @I127@
+1 CHIL @I129@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F57@ FAM
+1 HUSB @I131@
+1 WIFE @I130@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F58@ FAM
+1 HUSB @I138@
+1 WIFE @I143@
+1 CHIL @I144@
+1 CHIL @I145@
+1 CHIL @I146@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F59@ FAM
+1 HUSB @I144@
+1 WIFE @I147@
+1 CHIL @I148@
+1 CHIL @I149@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F60@ FAM
+1 HUSB @I145@
+1 WIFE @I150@
+1 CHIL @I151@
+1 CHIL @I152@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F61@ FAM
+1 HUSB @I160@
+1 WIFE @I146@
+1 CHIL @I161@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F62@ FAM
+1 HUSB @I148@
+1 WIFE @I157@
+1 CHIL @I158@
+1 CHIL @I159@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F63@ FAM
+1 HUSB @I151@
+1 WIFE @I155@
+1 CHIL @I156@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F64@ FAM
+1 HUSB @I153@
+1 WIFE @I152@
+1 CHIL @I154@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F65@ FAM
+1 HUSB @I162@
+1 WIFE @I161@
+1 CHIL @I163@
+1 CHIL @I164@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F66@ FAM
+1 HUSB @I165@
+1 WIFE @I170@
+1 CHIL @I171@
+1 CHIL @I172@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F67@ FAM
+1 HUSB @I166@
+1 WIFE @I178@
+1 CHIL @I179@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F68@ FAM
+1 HUSB @I167@
+1 WIFE @I177@
+1 CHIL @I180@
+1 CHIL @I181@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F69@ FAM
+1 HUSB @I173@
+1 WIFE @I172@
+1 CHIL @I174@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F70@ FAM
+1 HUSB @I184@
+1 WIFE @I183@
+1 CHIL @I185@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F71@ FAM
+1 HUSB @I187@
+1 WIFE @I189@
+1 CHIL @I190@
+1 CHIL @I191@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F72@ FAM
+1 HUSB @I192@
+1 WIFE @I188@
+1 CHIL @I193@
+1 CHIL @I194@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F73@ FAM
+1 HUSB @I197@
+1 WIFE @I196@
+1 CHIL @I198@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F74@ FAM
+1 HUSB @I203@
+1 WIFE @I204@
+1 CHIL @I205@
+1 CHIL @I206@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F75@ FAM
+1 HUSB @I210@
+1 WIFE @I211@
+1 CHIL @I208@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F76@ FAM
+1 HUSB @I212@
+1 WIFE @I213@
+1 CHIL @I210@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 @F77@ FAM
+1 HUSB @I214@
+1 WIFE @I215@
+1 CHIL @I212@
+1 _CURRENT Y
+1 _PRIMARY Y
+0 TRLR

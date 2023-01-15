@@ -2,17 +2,6 @@ const { sign } = require("crypto");
 const fs = require("fs");
 const { exit } = require("process");
 
-function file_exists(filePath) {
-  fs.access(filePath, fs.F_OK, (err) => {
-    if (err) {
-      console.error(err)
-      return false
-    }
-    return true
-  })
-}
-
-
 function parseGEDFile(filePath) {
   const fileData = fs.readFileSync(filePath, "utf8");
   const fileLines = fileData.split("\n");
@@ -100,7 +89,7 @@ async function checkFileExist(path, timeout = 2000)
 function parse_ged_file_wrapper(filename) {
   checkFileExist(filename)
   tree = parseGEDFile(filename)
-  find_sprawl("Krishan-kanta(Geeta) Chopra", tree)
+  find_sprawl("Simran(Maha_Lakshmi) Dilawari", tree)
   return tree
 }
 
@@ -119,19 +108,28 @@ function get_specific_family(indiv_id, fam_id, tree) {
   if (fam_c_idx != undefined) {
     fam_c_idx = convert_id_to_idx(fam_c_idx)
     var fam = tree["families"][fam_c_idx]
-    console.log(fam)
-    console.log("Father", individuals[convert_id_to_idx(fam.husband)])
-    console.log("Mother", individuals[convert_id_to_idx(fam.wife)])
+    console.log("Father", JSON.stringify(individuals[convert_id_to_idx(fam.husband)]))
+    console.log("Mother", JSON.stringify(individuals[convert_id_to_idx(fam.wife)]))
 
     for (s_idx in fam.children) {
       if (fam.children[s_idx] == indiv_id) continue;
-      console.log("Siblings", individuals[convert_id_to_idx(fam.children[s_idx])])
+      console.log("Siblings", JSON.stringify(individuals[convert_id_to_idx(fam.children[s_idx])]))
     }
   }
-
+  console.log("====================================================")
   if (fam_s_idx != undefined) {
+    console.log(fam_s_idx)
     fam_s_idx = convert_id_to_idx(fam_s_idx)
     var fam = tree["families"][fam_s_idx]
+    if (fam.husband != indiv_id) {
+      console.log("Husband", JSON.stringify(individuals[convert_id_to_idx(fam.husband)]))
+    } else if (fam.wife != indiv_id) {
+      console.log("Wife", JSON.stringify(individuals[convert_id_to_idx(fam.wife)]))
+    }
+
+    for (c_idx in fam.children)
+      console.log("Children", JSON.stringify(individuals[convert_id_to_idx(fam.children[c_idx])]))
+
   }
 
   
@@ -139,12 +137,12 @@ function get_specific_family(indiv_id, fam_id, tree) {
 
 
 function find_sprawl(person_name, tree) {
+  console.log("\n\n")
   // Finding Person
   individuals = tree["individuals"]
   for (i in individuals) {
-    console.log(individuals[i].name)
     if (individuals[i].name == person_name) {
-      console.log("Found Him", individuals[i])
+      console.log("Individual Found", JSON.stringify(individuals[i]))
       get_specific_family(individuals[i].id, [individuals[i].famc, individuals[i].fams], tree)
       break
     }
