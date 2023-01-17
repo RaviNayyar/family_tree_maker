@@ -52,6 +52,7 @@ function find_sprawl(person_name, tree) {
   }
 }
 
+
 function parseGEDFile(fileData) {
   fileLines = fileData.split("\n");
   const individuals = [];
@@ -222,26 +223,19 @@ function make_directed_graph(tree) {
   }
 
   for (f in tree['families']) {
-
     p1_id = tree['families'][f].husband
     p2_id = tree['families'][f].wife
-
     for (c in tree['families'][f].children) {
       g.addEdge(p1_id, tree['families'][f].children[c], 1);
       g.addEdge(p2_id, tree['families'][f].children[c], 1);
     }
   }
 
-  var longest_path_data = g.longestPathRecursive(g, tree['individuals'])
-  longest_path_data[1].forEach(id => {
-    console.log(id, tree['individuals'][convert_id_to_idx(id)].name)
-  });
-
+  return g
 }
 
 
-function parse_ged_file_wrapper(fileData) {
-  tree = parseGEDFile(fileData)
+function print_parsed_file(tree) {
   for (f in tree["individuals"]) {
     console.log(JSON.stringify(tree["individuals"][f]))
   }
@@ -253,9 +247,20 @@ function parse_ged_file_wrapper(fileData) {
   for (f in tree["connections"]) {
     console.log(JSON.stringify(tree["connections"][f]))
   }
+}
 
-  make_directed_graph(tree)
-  return tree
+
+function parse_ged_file_wrapper(fileData) {
+  tree = parseGEDFile(fileData)
+  g = make_directed_graph(tree)
+
+  console.log("Recursive Depth First Search To Find Longest Tree Path")
+  var longest_path_data = g.longestPathRecursive(g, tree['individuals'])
+  longest_path_data[1].forEach(id => {
+    console.log(id, tree['individuals'][convert_id_to_idx(id)].name)
+  });
+
+  console.log("Longest Path: ", longest_path_data[0]+1)
 }
 
 
