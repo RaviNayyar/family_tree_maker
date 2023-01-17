@@ -6,6 +6,9 @@
 <link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 <script src="index.js"></script>
+<script src="draw_tree.js"></script>
+<script src="ged_parser.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
 
 <body>
     <div id="logo">
@@ -26,10 +29,56 @@
         
     </div>
 
+    <!-- <canvas id="tree_canvas" width="1000" height="1000"></canvas> -->
+    <div id="my_dataviz"></div>
+
     <script>
         document.getElementById("primary-file-upload").onchange = function() {
             document.getElementById("file_form").submit();
         };
+        
+        document.querySelector('input#primary-file-upload').addEventListener('change', handleUpload)
+
+        // const canvas = document.getElementById("tree_canvas");
+        // var ctx = canvas.getContext("2d");
+
+        // const node_size = 100
+        // draw_canvas_grid(ctx, 1, "grey", node_size)
+        // draw_node(ctx, node_size)
+        
+        // var w = window.innerWidth;
+        // var h = window.innerHeight;
+        // console.log(w,h)
+
+        // canvas.addEventListener("mousedown", startPan, false);
+        // canvas.addEventListener("mousemove", doPan, false);
+        // canvas.addEventListener("mouseup", stopPan, false);
+        
+        // var startX, startY, panning;
+        // function startPan(event) {
+        //     console.log("Start Pan")
+        //     startX = event.clientX - canvas.offsetLeft;
+        //     startY = event.clientY - canvas.offsetTop;
+        //     panning = true;
+        // }
+
+        // function doPan(event) {
+        //     if (panning) {
+        //         console.log("We are panning")
+        //     var newX = event.clientX - canvas.offsetLeft;
+        //     var newY = event.clientY - canvas.offsetTop;
+        //     var offsetX = newX - startX;
+        //     var offsetY = newY - startY;
+        //     ctx.translate(offsetX, offsetY);
+        //     startX = newX;
+        //     startY = newY;
+        //     }
+        // }
+
+        // function stopPan(event) {
+        //     console.log("End panning")
+        //     panning = false;
+        // }
     </script>
 
 </body>

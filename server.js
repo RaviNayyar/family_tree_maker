@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const upload = require('express-fileupload')
-const ged_parser = require("./gedparser.js");
 app.use(express.static(path.join(__dirname, 'public')));
 
 g_tree = null
@@ -29,8 +28,6 @@ app.post('/upload', (req, res) => {
   let file = req.files.files
   let file_path = `${__dirname}\\uploads\\${file.name}`
   console.log(file_path)
-  retval = parse_gedcom(file, file_path)
-  res.send(retval)
 });
 
 

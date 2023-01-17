@@ -2,7 +2,7 @@
 1 SOUR Family Echo
 2 WWW http://www.familyecho.com/
 1 FILE My Family
-1 DATE 14 JAN 2023
+1 DATE 15 JAN 2023
 1 DEST ANSTFILE
 1 GEDC
 2 VERS 5.5.1
@@ -1045,7 +1045,8 @@
 1 FAMS @F58@
 1 FAMC @F3@
 0 @I139@ INDI
-1 NAME
+1 NAME Name Unknown
+2 GIVN Name Unknown
 1 SEX F
 1 FAMS @F10@
 0 @I140@ INDI
