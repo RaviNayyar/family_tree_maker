@@ -1,3 +1,6 @@
+fam_tree_structure = null
+
+
 function convert_id_to_idx(id) {
   if (id.includes("I"))
     return parseInt(id.replaceAll("@", "").replaceAll("I", "")) - 1
@@ -7,50 +10,47 @@ function convert_id_to_idx(id) {
 }
 
 
-function get_specific_family(indiv_id, fam_id, tree) {
-  let fam_c_idx = fam_id[0];
-  let fam_s_idx = fam_id[1];
-
-  if (fam_c_idx != undefined) {
-    fam_c_idx = convert_id_to_idx(fam_c_idx)
-    var fam = tree["families"][fam_c_idx]
-    console.log("Father", JSON.stringify(individuals[convert_id_to_idx(fam.husband)]))
-    console.log("Mother", JSON.stringify(individuals[convert_id_to_idx(fam.wife)]))
-
-    for (s_idx in fam.children) {
-      if (fam.children[s_idx] == indiv_id) continue;
-      console.log("Siblings", JSON.stringify(individuals[convert_id_to_idx(fam.children[s_idx])]))
-    }
-  }
-  console.log("====================================================")
-  if (fam_s_idx != undefined) {
-    console.log(fam_s_idx)
-    fam_s_idx = convert_id_to_idx(fam_s_idx)
-    var fam = tree["families"][fam_s_idx]
-    if (fam.husband != indiv_id) {
-      console.log("Husband", JSON.stringify(individuals[convert_id_to_idx(fam.husband)]))
-    } else if (fam.wife != indiv_id) {
-      console.log("Wife", JSON.stringify(individuals[convert_id_to_idx(fam.wife)]))
-    }
-
-    for (c_idx in fam.children)
-      console.log("Children", JSON.stringify(individuals[convert_id_to_idx(fam.children[c_idx])]))
-  }  
-}
-
-
-function find_sprawl(person_name, tree) {
-  console.log("\n\n")
-  // Finding Person
-  individuals = tree["individuals"]
-  for (i in individuals) {
-    if (individuals[i].name == person_name) {
-      console.log("Individual Found", JSON.stringify(individuals[i]))
-      get_specific_family(individuals[i].id, [individuals[i].famc, individuals[i].fams], tree)
-      break
-    }
+function get_user_id_family(id) {
+  for (f in fam_tree_structure["families"]) {
+    console.log(JSON.stringify(fam_tree_structure["families"][f]))
   }
 }
+
+
+/*
+  Function returns the immediate family of the selected individual
+  @param indiv: Object representing the entire individual
+*/
+function get_specific_family(indiv) {
+  indiv_id = indiv.id
+  let fam_c = indiv.famc
+  let fam_s = indiv.fams
+
+  var fam_retval = []
+  fam_s.forEach(s_idx => {
+    fam = fam_tree_structure['families'][convert_id_to_idx(s_idx)]
+    husband = fam.husband[0]
+    wife = fam.wife[0]
+    fam_temp = {}
+    fam_temp["spouce"] = null
+    if (husband != indiv_id) {
+      fam_temp["spouce"] = fam_tree_structure['individuals'][convert_id_to_idx(husband)]
+    } else if (wife != indiv_id) {
+      fam_temp["spouce"] = fam_tree_structure['individuals'][convert_id_to_idx(wife)]
+    }
+
+    c_temp = []
+    fam.children.forEach(child => {
+      c_temp.push(fam_tree_structure['individuals'][convert_id_to_idx(child)])
+    });
+    fam_temp["children"] = c_temp
+    fam_retval.push(fam_temp)
+  });
+
+  //console.log("FAM RETVAL: ", JSON.stringify(fam_retval))
+  return fam_retval
+}
+
 
 
 function parseGEDFile(fileData) {
@@ -73,6 +73,7 @@ function parseGEDFile(fileData) {
       individual["sex"] = [];
       individual["famc"] = [];
       individual["fams"] = [];
+      individual["gen"] = []
       individual["other"] = [];
 
       while (true) {
@@ -89,8 +90,11 @@ function parseGEDFile(fileData) {
           individual.fams.push(fileLines[i].split(" ")[2].trim());
           connections.push({ type: "spouse", individual: id, family: individual.fams });
         } else {
+          individual.gen.push(null)
           individual.other.push(fileLines[i].split(" ")[1].trim()+"__"+fileLines[i].split(" ")[2].trim());
         }
+
+
       }
       individuals.push(individual);
     }
@@ -126,6 +130,47 @@ function parseGEDFile(fileData) {
   return { individuals, families, connections };
 }
 
+
+/*
+  Function that uses depth first search to find the longest path front the start node
+  Function is also used to map a generation to each individual when the root node is given as start
+  @param g: directed graph object representing family tree
+  @param start: the starting node upon which to start dfs
+  @assign_gen: flag which allows the mapping of generations onto individuals
+*/
+function get_longest_path(g, start, assign_gen = false) {
+  current_generation = 0
+  let longest = { path: [], weight: Number.NEGATIVE_INFINITY };
+
+  function dfs(g, vertex, path = [], weight = 0) {
+    path.push(vertex);
+    
+    if (assign_gen) {
+      fam_tree_structure['individuals'][convert_id_to_idx(vertex)]["gen"] = current_generation
+      let vertex_family = get_specific_family(fam_tree_structure['individuals'][convert_id_to_idx(vertex)])
+      vertex_family.forEach(fam => {
+        if (fam.spouce != null)
+          fam_tree_structure['individuals'][convert_id_to_idx(fam.spouce.id)]["gen"] = current_generation
+      });
+    }
+
+    if (weight > longest.weight) {
+      longest = { path: [...path], weight };
+    }
+
+    for (let edge of g.adjacencyList[vertex]) {
+      if (assign_gen) current_generation += 1
+      if (!path.includes(edge.vertex)) {
+        dfs(g, edge.vertex, path, weight + edge.weight);
+      }
+    }
+
+    if (assign_gen) current_generation -= 1
+    path.pop();
+  }
+  dfs(g, start);
+  return [longest.weight, longest.path]
+}
 
 
 class Graph {
@@ -173,28 +218,6 @@ class Graph {
   }
 
   longestPathRecursive(g, indiv_list) {
-    
-    function get_longest_path(g, start) {
-    
-      let longest = { path: [], weight: Number.NEGATIVE_INFINITY };
-
-      function dfs(g, vertex, path = [], weight = 0) {
-        path.push(vertex);
-        if (weight > longest.weight) {
-          longest = { path: [...path], weight };
-        }
-
-        for (let edge of g.adjacencyList[vertex]) {
-          if (!path.includes(edge.vertex)) {
-            dfs(g, edge.vertex, path, weight + edge.weight);
-          }
-        }
-        path.pop();
-      }
-      dfs(g, start);
-      return [longest.weight, longest.path]
-    }
-
     var current_longest_weight = 0
     var current_longest_path = ""
     indiv_list.forEach(indiv_id => {
@@ -209,7 +232,6 @@ class Graph {
   }
 
 }
-
 
 
 function make_directed_graph(tree) {
@@ -250,17 +272,58 @@ function print_parsed_file(tree) {
 }
 
 
+function associate_family_by_generation(max_gen) {
+  console.log(max_gen)
+  for(let i=max_gen; i>= 0; --i) {
+    console.log("================= GEN: ",i," =================")
+    fam_tree_structure['families'].forEach(family => {
+      if (family.children.length != 0) {
+        family.children.forEach(child => {
+          if (fam_tree_structure['individuals'][convert_id_to_idx(child)]["gen"] == i) {
+            console.log(JSON.stringify(family))
+          }
+        })
+      }
+    })
+  }
+}
+
+
+function get_individuals_by_generation(max_gen) {
+  for(let i=0; i< max_gen; ++i) {
+    console.log("================= GEN: ",i," =================")
+    fam_tree_structure['individuals'].forEach(indiv => {
+      if (indiv.gen == i) {
+        console.log(indiv.name)
+      }
+    })
+  }
+}
+
+
 function parse_ged_file_wrapper(fileData) {
-  tree = parseGEDFile(fileData)
-  g = make_directed_graph(tree)
+  fam_tree_structure = parseGEDFile(fileData)
+  g = make_directed_graph(fam_tree_structure)
 
   console.log("Recursive Depth First Search To Find Longest Tree Path")
-  var longest_path_data = g.longestPathRecursive(g, tree['individuals'])
+  var longest_path_data = g.longestPathRecursive(g, fam_tree_structure['individuals'])
   longest_path_data[1].forEach(id => {
-    console.log(id, tree['individuals'][convert_id_to_idx(id)].name)
+    console.log(id, fam_tree_structure['individuals'][convert_id_to_idx(id)].name)
   });
 
-  console.log("Longest Path: ", longest_path_data[0]+1)
+  max_generation = longest_path_data[0]
+  root_node = longest_path_data[1][0]
+
+  console.log(JSON.stringify(longest_path_data))
+  console.log("MAX GEN: ", max_generation, "Root Node: ", root_node)
+
+  // Assign generations to each individual in tree
+  get_longest_path(g, longest_path_data[1][0], true)
+  
+  get_individuals_by_generation(max_generation)
+  //associate_family_by_generation(max_generation)
+  //print_parsed_file(fam_tree_structure)
+  return longest_path_data
 }
 
 
