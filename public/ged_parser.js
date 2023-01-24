@@ -22,29 +22,34 @@ function get_user_id_family(id) {
   @param indiv: Object representing the entire individual
 */
 function get_specific_family(indiv) {
+  //console.log("get_specific_family", JSON.stringify(indiv))
   indiv_id = indiv.id
   let fam_c = indiv.famc
   let fam_s = indiv.fams
 
   var fam_retval = []
   fam_s.forEach(s_idx => {
+    //console.log(s_idx, convert_id_to_idx(s_idx))
     fam = fam_tree_structure['families'][convert_id_to_idx(s_idx)]
-    husband = fam.husband[0]
-    wife = fam.wife[0]
-    fam_temp = {}
-    fam_temp["spouce"] = null
-    if (husband != indiv_id) {
-      fam_temp["spouce"] = fam_tree_structure['individuals'][convert_id_to_idx(husband)]
-    } else if (wife != indiv_id) {
-      fam_temp["spouce"] = fam_tree_structure['individuals'][convert_id_to_idx(wife)]
-    }
+    //console.log(JSON.stringify(fam))
+    if (!fam.other.error) {
+      husband = fam.husband[0]
+      wife = fam.wife[0]
+      fam_temp = {}
+      fam_temp["spouce"] = null
+      if (husband != indiv_id) {
+        fam_temp["spouce"] = fam_tree_structure['individuals'][convert_id_to_idx(husband)]
+      } else if (wife != indiv_id) {
+        fam_temp["spouce"] = fam_tree_structure['individuals'][convert_id_to_idx(wife)]
+      }
 
-    c_temp = []
-    fam.children.forEach(child => {
-      c_temp.push(fam_tree_structure['individuals'][convert_id_to_idx(child)])
-    });
-    fam_temp["children"] = c_temp
-    fam_retval.push(fam_temp)
+      c_temp = []
+      fam.children.forEach(child => {
+        c_temp.push(fam_tree_structure['individuals'][convert_id_to_idx(child)])
+      });
+      fam_temp["children"] = c_temp
+      fam_retval.push(fam_temp)  
+    } 
   });
 
   //console.log("FAM RETVAL: ", JSON.stringify(fam_retval))
@@ -73,7 +78,7 @@ function parseGEDFile(fileData) {
       individual["sex"] = [];
       individual["famc"] = [];
       individual["fams"] = [];
-      individual["gen"] = []
+      individual["gen"] = null
       individual["other"] = [];
 
       while (true) {
@@ -90,7 +95,7 @@ function parseGEDFile(fileData) {
           individual.fams.push(fileLines[i].split(" ")[2].trim());
           connections.push({ type: "spouse", individual: id, family: individual.fams });
         } else {
-          individual.gen.push(null)
+          individual.gen = null
           individual.other.push(fileLines[i].split(" ")[1].trim()+"__"+fileLines[i].split(" ")[2].trim());
         }
 
@@ -104,7 +109,7 @@ function parseGEDFile(fileData) {
       family["husband"] = [];
       family["wife"] = [];
       family["children"] = [];
-      family["other"] = [];
+      family["other"] = {};
       while (true) {
         if (++i > fileLines.length || fileLines[i] == undefined) break
         if (fileLines[i].startsWith("0 @")) {--i; break}
@@ -123,6 +128,12 @@ function parseGEDFile(fileData) {
           //family.other.push(fileLines[i].split(" ")[1].trim()+"__"+fileLines[i].split(" ")[2].trim());
         }
       }
+
+      if (family.husband.length == 0 || family.wife.length == 0)
+        family["other"]["error"]= true      
+      else 
+        family["other"]["error"]= false
+      
       families.push(family);
     }
 
@@ -139,6 +150,8 @@ function parseGEDFile(fileData) {
   @assign_gen: flag which allows the mapping of generations onto individuals
 */
 function get_longest_path(g, start, assign_gen = false) {
+  if (assign_gen) console.log("Assigning Generations to Indiviudals")
+
   current_generation = 0
   let longest = { path: [], weight: Number.NEGATIVE_INFINITY };
 
@@ -146,12 +159,22 @@ function get_longest_path(g, start, assign_gen = false) {
     path.push(vertex);
     
     if (assign_gen) {
-      fam_tree_structure['individuals'][convert_id_to_idx(vertex)]["gen"] = current_generation
       let vertex_family = get_specific_family(fam_tree_structure['individuals'][convert_id_to_idx(vertex)])
+
+      console.log(fam_tree_structure['individuals'][convert_id_to_idx(vertex)]["name"], JSON.stringify(vertex_family))
+
+      fam_tree_structure['individuals'][convert_id_to_idx(vertex)]["gen"] = current_generation
+
+      // vertex_family.forEach(fam => {
+      //     console.log(fam_tree_structure['individuals'][convert_id_to_idx(vertex)]["name"], fam_tree_structure['individuals'][convert_id_to_idx(fam.spouce.id)]["name"])
+      // });
+      
       vertex_family.forEach(fam => {
         if (fam.spouce != null)
           fam_tree_structure['individuals'][convert_id_to_idx(fam.spouce.id)]["gen"] = current_generation
-      });
+          console.log(JSON.stringify(fam))
+
+        });
     }
 
     if (weight > longest.weight) {
@@ -245,8 +268,11 @@ function make_directed_graph(tree) {
   }
 
   for (f in tree['families']) {
-    p1_id = tree['families'][f].husband
-    p2_id = tree['families'][f].wife
+    if (tree['families'][f].other.error) continue;
+
+    p1_id = tree['families'][f].husband[0]
+    p2_id = tree['families'][f].wife[0]
+
     for (c in tree['families'][f].children) {
       g.addEdge(p1_id, tree['families'][f].children[c], 1);
       g.addEdge(p2_id, tree['families'][f].children[c], 1);
@@ -267,7 +293,7 @@ function print_parsed_file(tree) {
   }
 
   for (f in tree["connections"]) {
-    console.log(JSON.stringify(tree["connections"][f]))
+    //console.log(JSON.stringify(tree["connections"][f]))
   }
 }
 
@@ -294,15 +320,45 @@ function get_individuals_by_generation(max_gen) {
     console.log("================= GEN: ",i," =================")
     fam_tree_structure['individuals'].forEach(indiv => {
       if (indiv.gen == i) {
-        console.log(indiv.name)
+        console.log(JSON.stringify(indiv.name))
       }
     })
   }
+  console.log("================= GEN:  NULL =================")
+
+  fam_tree_structure['individuals'].forEach(indiv => {
+    if (indiv.gen == null) {
+      console.log(JSON.stringify(indiv.name))
+    }
+  })
+}
+
+function normalize_structure() {
+  indiv_len = fam_tree_structure['individuals'].length
+  let temp = Array.from({length: indiv_len}, () => null);
+
+  fam_tree_structure['individuals'].forEach(indiv => {
+    id = convert_id_to_idx(indiv.id)
+    temp[id] = indiv
+  })
+  fam_tree_structure['individuals'] = temp
+  
+  fam_len = fam_tree_structure['families'].length
+  temp = Array.from({length: fam_len}, () => null);
+
+  fam_tree_structure['families'].forEach(fam => {
+    id = convert_id_to_idx(fam.id)
+    temp[id] = fam
+  })
+  fam_tree_structure['families'] = temp
 }
 
 
 function parse_ged_file_wrapper(fileData) {
   fam_tree_structure = parseGEDFile(fileData)
+  normalize_structure()
+  //print_parsed_file(fam_tree_structure)
+
   g = make_directed_graph(fam_tree_structure)
 
   console.log("Recursive Depth First Search To Find Longest Tree Path")
@@ -311,7 +367,7 @@ function parse_ged_file_wrapper(fileData) {
     console.log(id, fam_tree_structure['individuals'][convert_id_to_idx(id)].name)
   });
 
-  max_generation = longest_path_data[0]
+  max_generation = longest_path_data[0]+1
   root_node = longest_path_data[1][0]
 
   console.log(JSON.stringify(longest_path_data))
